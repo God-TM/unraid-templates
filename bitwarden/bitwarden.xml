@@ -19,7 +19,7 @@ For full documentation on installing and deploying Bitwarden with Docker, please
   <Category>Security: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png</Icon>
+  <Icon>https://raw.githubusercontent.com/God-TM/unraid-templates/main/bitwarden/bitwarden.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
