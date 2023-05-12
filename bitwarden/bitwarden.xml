@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Bitwarden</Name>
+  <Repository>bitwarden/self-host:beta</Repository>
+  <Registry>https://hub.docker.com/r/bitwarden/self-host/</Registry>
+  <Network>bridge</Network>
+  <MyIP></MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://bitwarden.com/help/install-and-deploy-unified-beta/</Support>
+  <Project>https://bitwarden.com/help/install-and-deploy-unified-beta/</Project>
+  <Overview>Unified image for self hosting Bitwarden.&#xD;
+&#xD;
+Open source password management solutions for individuals, teams, and business organizations.&#xD;
+&#xD;
+https://bitwarden.com/help/install-and-deploy-unified-beta/&#xD;
+&#xD;
+For full documentation on installing and deploying Bitwarden with Docker, please refer to the documentation here: https://bitwarden.com/help/install-and-deploy-bitwarden-unified-beta/</Overview>
+  <Category>Security: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683919862</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Data" Target="/etc/bitwarden" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="BW_DOMAIN" Target="BW_DOMAIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="BW_DB_SERVER" Target="BW_DB_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="BW_DB_DATABASE" Target="BW_DB_DATABASE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="">bw</Config>
+  <Config Name="BW_DB_USERNAME" Target="BW_DB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="8080" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="BW_ENABLE_SSL" Target="BW_ENABLE_SSL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="8443" Target="8443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
+  <Config Name="globalSettings__mail__replyToEmail" Target="globalSettings__mail__replyToEmail" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="globalSettings__mail__smtp__host" Target="globalSettings__mail__smtp__host" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp.gmail.com</Config>
+  <Config Name="globalSettings__mail__smtp__port" Target="globalSettings__mail__smtp__port" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">587</Config>
+  <Config Name="globalSettings__mail__smtp__ssl" Target="globalSettings__mail__smtp__ssl" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="globalSettings__mail__smtp__username" Target="globalSettings__mail__smtp__username" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="globalSettings__mail__smtp__password" Target="globalSettings__mail__smtp__password" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="adminSettings__admins" Target="adminSettings__admins" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">name@example.com</Config>
+  <Config Name="BW_ENABLE_SSO" Target="BW_ENABLE_SSO" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="BW_ENABLE_SCIM" Target="BW_ENABLE_SCIM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="BW_DB_PROVIDER" Target="BW_DB_PROVIDER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="BW_DB_PASSWORD" Target="BW_DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="BW_INSTALLATION_ID" Target="BW_INSTALLATION_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="BW_INSTALLATION_KEY" Target="BW_INSTALLATION_KEY" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+</Container>
